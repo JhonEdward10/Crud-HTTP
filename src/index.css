@@ -1,0 +1,154 @@
+*{
+  list-style: none;
+}
+
+body {
+  font-family:'Cursive','Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  background-image: url(./image/ecommerce-strategy-header-animate.gif);
+}
+
+.App{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.formulario{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .App{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.user-form{
+    background: linear-gradient(to bottom right, blanchedalmond, rgb(253, 179, 81));
+    border-radius: 30px 30px;
+    min-width: 100%;
+}
+
+@media (min-width: 768px){
+.user-form {
+    border-radius: 30px 30px;
+    max-width: 100%;
+  }
+}
+.user-form form {
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.user-form h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.user-form .input {
+  display: flex;
+  align-items: center;
+  padding: 10px 10px;
+  width: 100%;
+}
+
+.user-form .input input, .user-form .input select {
+  background: rgba(0,0,0,.03);
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+  width: 90%;
+}
+
+
+button.showbutton{
+  background: linear-gradient(to right, rgb(112, 210, 218), rgb(88, 75, 102));
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px;
+  width: 100%;
+  margin: 10px 0;
+}
+
+button.form-submit{
+  background: linear-gradient(to right, rgb(112, 210, 218), rgb(88, 75, 102));
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 20px;
+  margin-top: 15px;
+  padding: 10px;
+  width: 100%;
+}
+
+.users-cards{
+  margin: 0;
+  padding: 10px;
+}
+
+.users-list-container {
+  padding: 10px;
+}
+
+article.users-list-container{
+  background: linear-gradient(to bottom right, blanchedalmond, rgb(253, 179, 81));
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 36px 0;
+  padding: 2px;
+  width: 100%;
+}
+
+ul{
+  padding: 20px;
+}
+
+li{
+  padding-top: 10px;
+}
+
+div.container-buttons{
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  width: 30%;
+  margin-left: 35%;
+}
+
+button.delete{
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 50px;
+}
+
+.fa-trash-alt:before, .fa-trash-can:before {
+  content: "\f2ed";
+  color: red;
+  font-size: 1.6rem;
+}
+
+button.update{
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 50px;
+}
+
+.fa-file-edit:before, .fa-file-pen:before {
+  color: black;
+  font-size: 1.6rem;
+}
